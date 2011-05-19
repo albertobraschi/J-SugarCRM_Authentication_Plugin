@@ -5,7 +5,7 @@ The Plugin uses the web service API available on SugarCRM.
 The features introduced with the 1.6 version are (tested on SugarCRM 5.5 CE/PRO/ENT):
 
 	1) Added support for the Professional and Enterprise Editions of SugarCRM;
-    2) Added support for Self-Customer Portal. Using the Portal API to allow access to the private area of Joomla to SugarCRM Contacts registered;
-    3) Log file separate from the default log file of Joomla;
-    4) SugarCRM UserToken stored in the Session of Joomla (JSession);
-    5) Add the Debug mode on log files.
+	2) Added support for Self-Customer Portal. Using the Portal API to allow access to the private area of Joomla to SugarCRM Contacts registered;
+	3) Log file separate from the default log file of Joomla;
+	4) SugarCRM UserToken stored in the Session of Joomla (JSession);
+	5) Add the Debug mode on log files.
