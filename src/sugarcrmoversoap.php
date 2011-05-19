@@ -86,12 +86,16 @@ class plgAuthenticationSugarCRMOverSoap extends JPlugin
 			return false;
 		}
 
-		// If SugarCRM Pro and Ent password must be hashed (md5)
-		if ($this->params->get('SugarCRMEd') == '1' || $this->params->get('SugarCRMEd') == '2') {
+		// If SugarCRM CE Portal API password must be hashed (md5)
+		if ($this->params->get('SugarCRMEd') == '0') {
 			$credentials['password'] = md5($credentials['password']);
 			$sugarcrmPortalUserAPIPassword = md5($sugarcrmPortalUserAPIPassword);
 		}
-
+		// If SugarCRM Pro and Ent password must be hashed (md5)
+		if ($this->params->get('SugarCRMEd') == '1' || $this->params->get('SugarCRMEd') == '2') {
+			$sugarcrmPortalUserAPIPassword = md5($sugarcrmPortalUserAPIPassword);
+		}
+		
 		// Set WSDL Cache
 		ini_set("soap.wsdl_cache_enabled", $this->params->get('WSDLCache'));
 
@@ -109,7 +113,7 @@ class plgAuthenticationSugarCRMOverSoap extends JPlugin
 									'version' => '');
 				$contact_portal_auth = array('user_name' => $credentials['username'], 'password' => $credentials['password'],
 											'version' => '');
-				$auth_result = $client->portal_login_contact($portal_auth, $contact_portal_auth, $this->params->get('ApplicationName'));
+				$auth_result = $client->portal_login($portal_auth, $credentials['username'], $this->params->get('ApplicationName'));
 				
 			} else {
 				$auth_array = array('user_name' => $credentials['username'], 'password' => $credentials['password'],

@@ -2,13 +2,13 @@
 <install version="1.5" type="plugin" group="authentication">
 	<name>SugarCRM SOAP Authentication</name>
 	<author>Antonio Musarra</author>
-	<creationDate>Agosto 2010</creationDate>
-	<copyright>Copyright (C) 2010 Antonio Musarra. All rights reserved.</copyright>
+	<creationDate>Maggio 2011</creationDate>
+	<copyright>Copyright (C) 2010 - 2011 Antonio Musarra. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>antonio.musarra@gmail.com</authorEmail>
 	<authorUrl>musarra.wordpress.com</authorUrl>
-	<version>1.6</version>
-	<description>Autentication Plugin for SugarCRM (Version 5.5 CE, Pro, Ent)</description>
+	<version>1.7</version>
+	<description>Autentication Plugin for SugarCRM (Version 6.1 CE, Pro, Ent)</description>
 	<files>
 		<filename plugin="sugarcrmoversoap">sugarcrmoversoap.php</filename>
 	</files>
