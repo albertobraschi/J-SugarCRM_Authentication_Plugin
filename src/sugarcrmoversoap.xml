@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="authentication">
+	<name>SugarCRM SOAP Authentication</name>
+	<author>Antonio Musarra</author>
+	<creationDate>Agosto 2010</creationDate>
+	<copyright>Copyright (C) 2010 Antonio Musarra. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>antonio.musarra@gmail.com</authorEmail>
+	<authorUrl>musarra.wordpress.com</authorUrl>
+	<version>1.6</version>
+	<description>Autentication Plugin for SugarCRM (Version 5.5 CE, Pro, Ent)</description>
+	<files>
+		<filename plugin="sugarcrmoversoap">sugarcrmoversoap.php</filename>
+	</files>
+	<params>
+		<param name="SoapEndPoint" type="text" size="50" default="http://www.example.it/soap.php?wsdl" label="SOAP End Point" description="The SugarCRM SOAP WSDL (Web Services Description Language) HTTP location (example: http://www.example.it/soap.php?wsdl)" />
+		<param name="ApplicationName" type="text" size="50" default="MyJoomlaCMSPortal" label="Application Name" description="The Application Name that identify SOAP Client" />
+		<param name="SugarCRMEd" type="radio" default="0" label="Select SugarCRM Edition" description="Select the SugarCRM Edition">
+			<option value="0">Community Edition</option>
+			<option value="1">Professional Edition</option>
+			<option value="2">Enterprise Edition</option>
+		</param>
+		<param name="CheckPortalEnabled" type="radio" default="0" label="Select Check Portal" description="Enable the authentication over Self-Service Portal. You must remember that the Portal API support must be enabled. See SugarCRM Enterprise Docs at http://developers.sugarcrm.com/docs/ENT/5.5/-docs-Application_Guides-Sugar_Enterprise_Application_Guide_5.5.2GA-Administration.html">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="PortalUserAPI" type="text" size="20" default="" label="Portal User API" description="The SugarCRM Portal API User" />
+		<param name="PortalUserAPIPassword" type="password" size="20" default="" label="Portal User API Password" description="The SugarCRM Portal API User Password" />
+		<param name="DebugEnabled" type="radio" default="0" label="Enable a SOAP Debug" description="Enable debug mode on log file (logs/sugarcrmauth.log)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="WSDLCache" type="radio" default="0" label="Enable WSDL Cache" description="Enable WSDL Cache">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>
