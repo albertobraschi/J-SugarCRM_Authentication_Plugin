@@ -9,3 +9,7 @@ The features introduced with the 1.6 version are (tested on SugarCRM 5.5 CE/PRO/
 	3) Log file separate from the default log file of Joomla;
 	4) SugarCRM UserToken stored in the Session of Joomla (JSession);
 	5) Add the Debug mode on log files.
+
+The features introduced with the 1.7 version are: 
+	A) Support for SugarCRM 6.1 CE configured as Portal
+	
