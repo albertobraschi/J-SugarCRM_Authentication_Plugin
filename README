@@ -1,0 +1,11 @@
+This is Joomla plugin which aims to add another "driver authentication" based on SugarCRM. 
+You can then allow access to your Joomla portal for users of your CRM system based on SugarCRM. 
+The Plugin uses the web service API available on SugarCRM.
+
+The features introduced with the new version are:
+
+    Added support for the Professional and Enterprise Editions of SugarCRM;
+    Added support for Self-Customer Portal. Using the Portal API to allow access to the private area of Joomla to SugarCRM Contacts registered;
+    Log file separate from the default log file of Joomla;
+    SugarCRM UserToken stored in the Session of Joomla (JSession);
+    Add the Debug mode on log files.
