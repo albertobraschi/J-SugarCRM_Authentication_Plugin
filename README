@@ -11,5 +11,6 @@ The features introduced with the 1.6 version are (tested on SugarCRM 5.5 CE/PRO/
 	5) Add the Debug mode on log files.
 
 The features introduced with the 1.7 version are: 
-	A) Support for SugarCRM 6.1 CE configured as Portal
+	A) Support for SuugarCRM 6.1 (CE/PRO/ENT)
+	B) Support for SugarCRM 6.1 CE configured as Portal
 	

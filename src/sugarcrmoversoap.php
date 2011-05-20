@@ -88,7 +88,6 @@ class plgAuthenticationSugarCRMOverSoap extends JPlugin
 
 		// If SugarCRM CE Portal API password must be hashed (md5)
 		if ($this->params->get('SugarCRMEd') == '0') {
-			$credentials['password'] = md5($credentials['password']);
 			$sugarcrmPortalUserAPIPassword = md5($sugarcrmPortalUserAPIPassword);
 		}
 		// If SugarCRM Pro and Ent password must be hashed (md5)
